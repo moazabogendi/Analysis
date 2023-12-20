@@ -1,0 +1,32 @@
+This code compares two biological sequences, like DNA or proteins, to see how similar they are. It uses a scoring system,
+kind of like giving points for matching elements and penalties for differences. The goal is to find the best alignment that gives the highest score.
+
+The sequences, named x and y, are just strings of letters(A, T, G, C). 
+The code compares them using a matrix that tells us how much points to give or take away for matching or mismatching elements.
+
+To do this efficiently, the code uses a method called dynamic programming. It creates a matrix to store scores as it compares each part of the sequences.
+
+At the start, it sets up the matrix based on some rules.
+
+Then, it goes through each cell in the matrix, figuring out the best score by considering three possibilities: a match,
+deleting something from sequence x, or deleting something from sequence y. The code picks the option that gives the highest score for that cell.
+
+There's a function called Index that helps find the right place in the scoring matrix for each letter in the sequences.
+
+Finally, the code gives us the best score, which shows how well the two sequences align with each other.
+
+Time Analysis:
+
+Iterating through the lengths of sequences x and y.
+Time Complexity: O(m + n), where m is the length of sequence x, and n is the length of sequence y.
+
+Alignment Score:
+
+Nested loops iterating through a matrix of size (m+1) x (n+1).
+Time Complexity: O(m * n), where m is the length of sequence x, and n is the length of sequence y.
+
+Index Function:
+
+Time Complexity: O(1), constant time.
+
+Overall Time Complexity: O(m * n)
