@@ -1,0 +1,12 @@
+To determine whether an undirected graph is a tree or not, you can use the following properties:
+
+1) Connectedness: A tree is a connected graph, meaning that there is a path between every pair of nodes.
+2) No Cycles: A tree is an acyclic graph, meaning that there are no cycles.
+3)Number of Edges: A tree with n nodes has exactly n−1 edges.
+
+You can determine if a graph is a tree by checking these properties. The running time would depend on the specific algorithm or approach used. If you check all three properties,
+ the time complexity would be related to traversing the graph and checking edges, resulting in at least O(V + E), where V is the number of vertices and E is the number of edges.
+ The exact running time may vary depending on the specific implementation.
+
+
+
